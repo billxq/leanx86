@@ -26,4 +26,4 @@ sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 
 # serverchan
-git clone https://github.com/billxq/luci-app-wrtbwmon.git package/lean/luci-app-wrtbwmon
+# git clone https://github.com/billxq/luci-app-wrtbwmon.git package/lean/luci-app-wrtbwmon
