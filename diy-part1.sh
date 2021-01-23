@@ -14,11 +14,16 @@
 sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+# sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
 # Add smartdns source
-git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
+#git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
 
 # Add jd bonus
-git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git  package/luci-app-jd-dailybonus
+#git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git  package/luci-app-jd-dailybonus
 
+sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+
+# serverchan
+git clone https://github.com/billxq/luci-app-wrtbwmon.git package/lean/luci-app-wrtbwmon
